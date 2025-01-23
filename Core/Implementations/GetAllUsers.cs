@@ -11,7 +11,7 @@ namespace Core.Implementations
         {
             _userRepository = userRepository;
         }
-        public async Task<User> Execute()
+        public async Task<List<User>> Execute()
         {
             return await _userRepository.GetAll();
         }

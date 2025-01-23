@@ -23,7 +23,7 @@ namespace Infrastructure.DataAccess
             throw new NotImplementedException();
         }
 
-        public Task<User> GetAll()
+        public Task<List<User>> GetAll()
         {
             throw new NotImplementedException();
         }
