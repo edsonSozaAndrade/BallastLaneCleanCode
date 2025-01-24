@@ -28,6 +28,11 @@ namespace Infrastructure.DataAccess
             throw new NotImplementedException();
         }
 
+        public Task<User> GetByUsername(string username)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<User> GetById(Guid userId)
         {
             throw new NotImplementedException();

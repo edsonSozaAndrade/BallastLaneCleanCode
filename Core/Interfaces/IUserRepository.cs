@@ -9,5 +9,6 @@ namespace Core.Interfaces
         Task<User> Add(User newUser);
         Task<User> Update(User user);
         Task<User> Delete(Guid userId);
+        Task<User> GetByUsername(string username);
     }
 }

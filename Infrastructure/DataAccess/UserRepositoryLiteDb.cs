@@ -48,5 +48,11 @@ namespace Infrastructure.DataAccess
             await Task.CompletedTask;
             return null;
         }
+
+        public async Task<User> GetByUsername(string username)
+        {
+            var collection = _context.GetCollection<User>("Users");
+            return await Task.FromResult(collection.FindOne(u => u.Username == username));
+        }
     }
 }

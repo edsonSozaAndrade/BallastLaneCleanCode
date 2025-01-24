@@ -1,13 +1,18 @@
-﻿namespace Core.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Infrastructure.Entities
 {
-    public class User
+    public class NewUserRequest
     {
-        public Guid Id { get; set; }
+        [Required]
         public string Username { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string LastName { get; set; }
+        [Required]
         public string Email { get; set; }
+        [Required]
         public string Password { get; set; }
-        public DateTime CreatedAt { get; set; }
     }
 }
